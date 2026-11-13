@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@civ-clone/base-city-yield-research": "^0.1.0",
-    "@civ-clone/base-player-action-choose-research": "github:civ-clone/base-player-action-choose-research#feat/choose-research",
+    "@civ-clone/base-player-action-choose-research": "^0.1.0",
     "@civ-clone/base-science-advance-advancedflight": "^0.1.0",
     "@civ-clone/base-science-advance-alphabet": "^0.1.0",
     "@civ-clone/base-science-advance-astronomy": "^0.1.0",
