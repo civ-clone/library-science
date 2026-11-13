@@ -3,7 +3,8 @@ import * as PlayerActions from '../PlayerActionts';
 import * as Yields from '../Yields';
 import { Alphabet } from '@civ-clone/base-science-advance-alphabet/Alphabet';
 import AlphabetDefault from '../Advances/Alphabet';
-import ChooseResearch from '../PlayerActions/ChooseResearch';
+import { ChooseResearch } from '@civ-clone/base-player-action-choose-research/ChooseResearch';
+import ChooseResearchDefault from '../PlayerActions/ChooseResearch';
 import MandatoryPlayerAction from '@civ-clone/core-player/MandatoryPlayerAction';
 import { Research } from '@civ-clone/base-city-yield-research/Research';
 import { expect } from 'chai';
@@ -11,8 +12,9 @@ import { expect } from 'chai';
 // Re-exports, not copies: a class from here is the class itself, so `instanceof` and a save's class names agree
 //  whichever path a ruleset imports it from.
 describe('library-science', (): void => {
-  it('exports the ChooseResearch player action', (): void => {
+  it('re-exports the ChooseResearch player action', (): void => {
     expect(PlayerActions.ChooseResearch).equal(ChooseResearch);
+    expect(ChooseResearchDefault).equal(ChooseResearch);
     expect(Object.keys(PlayerActions)).eql(['ChooseResearch']);
     expect(ChooseResearch.prototype).instanceOf(MandatoryPlayerAction);
     expect(ChooseResearch.name).equal('ChooseResearch');

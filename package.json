@@ -16,6 +16,7 @@
     "ts:compile": "tsc --build tsconfig.json"
   },
   "devDependencies": {
+    "@civ-clone/core-player": "^0.1.10",
     "@types/chai": "^4.0.0",
     "@types/mocha": "^10.0.0",
     "@types/node": "^16.0.0",
@@ -27,6 +28,7 @@
   },
   "dependencies": {
     "@civ-clone/base-city-yield-research": "^0.1.0",
+    "@civ-clone/base-player-action-choose-research": "github:civ-clone/base-player-action-choose-research#feat/choose-research",
     "@civ-clone/base-science-advance-advancedflight": "^0.1.0",
     "@civ-clone/base-science-advance-alphabet": "^0.1.0",
     "@civ-clone/base-science-advance-astronomy": "^0.1.0",
@@ -93,7 +95,6 @@
     "@civ-clone/base-science-advance-thewheel": "^0.1.0",
     "@civ-clone/base-science-advance-trade": "^0.1.0",
     "@civ-clone/base-science-advance-university": "^0.1.0",
-    "@civ-clone/base-science-advance-writing": "^0.1.0",
-    "@civ-clone/core-player": "^0.1.10"
+    "@civ-clone/base-science-advance-writing": "^0.1.0"
   }
 }
